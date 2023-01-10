@@ -1,0 +1,18 @@
+# Route53의 특정 레코드만 수정할 수 있게 하는 IAM inline policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "route53:ChangeResourceRecordSets",
+            "Resource": "arn:aws:route53:::hostedzone/abcdefghijklm1", # zone 값은 env에 맞게 수정 필요
+            "Condition": {
+                "ForAllValues:StringEquals": {
+                    "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+                        "sainthm.domain.com" # Record name은 env에 맞게 수정 필요
+                    ]
+                }
+            }
+        }
+    ]
+}
