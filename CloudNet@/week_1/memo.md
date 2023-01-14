@@ -1,3 +1,8 @@
+# 블로그 수정 메모:
+- 줄 간격 등 수정 완료
+
+# Nest step
+
 - **워커 노드 증가**(ASG = Auto Scaling Group 활용) - [링크](https://kops.sigs.k8s.io/tutorial/working-with-instancegroups/) [링크2](https://kops.sigs.k8s.io/operations/scaling/)
     
     ```bash
