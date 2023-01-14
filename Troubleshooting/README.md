@@ -4,6 +4,10 @@
 
 ## IAM AssumeRole:
 
+- 해결 완료
+
+- 원인:
+    - Main AWS Account의 User policy 중, MFA 강제 정책 할당
 
 ## kOps 배포
 
