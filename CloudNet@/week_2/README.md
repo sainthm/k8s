@@ -1,3 +1,3 @@
 # week_2
 
-## Agenda
+## Topic: 쿠버네티스 네트워크
