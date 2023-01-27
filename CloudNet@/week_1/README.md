@@ -1,5 +1,7 @@
 # week_1 
 
+## Topic: 쿠버네티스 기본 설치 (AWS Kops)
+
 <br>
 
 ## Tip:
