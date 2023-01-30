@@ -16,3 +16,22 @@ ln -s /usr/bin/kubectl /usr/local/bin/k
 ls -al /usr/local/bin
 ```
 
+<br>
+
+### 2. alias
+
+```bash
+# Temporary
+alias k=kubectl
+```
+
+<br>
+
+```bash
+# bashrc setting for long time
+vi ~/.bashrc
+
+alias k=kubectl # 해당 내용 추가
+
+source ~/.bashrc
+```
