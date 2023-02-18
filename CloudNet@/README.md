@@ -1,19 +1,18 @@
 # CloudNet@ Folder:
 
-### Main URL:
-[CloudNet@ Blog](https://www.notion.so/gasidaseo/CloudNet-Blog-c9dfa44a27ff431dafdd2edacc8a1863)
+### Main URL: [CloudNet@ Blog](https://www.notion.so/gasidaseo/CloudNet-Blog-c9dfa44a27ff431dafdd2edacc8a1863)
 
 <br>
 
-### Tip:
+## 스터디 일정
 
-```bash
-# cli를 통한 현재 로컬 퍼블릭 IP 확인
-$ curl ipinfo.io/ip
-```
-
-```bash
-# AWS cli 명령어 사용 시, 모두 출력을 기본 옵션으로 설정하기
-$ export AWS_PAGER=""
-
-```
+- 스터디 **일정**과 **커리큘럼 :** **1월 8일** ~ **2월 26일** (총 **7주** 진행) , 매주 **일요일** 저녁 8시~10시)
+  - 1주차(**1.8**): 1장~6장 - 쿠버네티스 **기본** 설치 (AWS Kops), 환경 최적화, **헬름**
+  - 2주차(**1.15**) : 7장~9장 - 쿠버네티스 **네트워크** (서비스, **AWS LoadBalancer Controller**)
+  - 3주차(**1.29**) : 10장~12장 - 쿠버네티스 **스토리지** (**AWS EBS/EFS Controller**)
+    - **중간 과제 제출**
+  - 4주차(**2.5**) : 13장~15장 - **깃옵스** 시스템 (harbor, gitlab, argocd)
+  - 5주차(**2.12**) : 16장~18장 - 쿠버네티스 **모니터링** (프로메테우스, 그라파나)
+  - 6주차(**2.19**) : 19장~20장 - 쿠버네티스 **경보** & **로깅** (얼럿매니저, Loki)
+  - 7주차(**2.26**) : 21장~23장 - 쿠버네티스 **보안** & **테스트**
+    - **졸업 과제 제출**
