@@ -18,13 +18,11 @@
 
 ## Prometheus
 
-![Prometheus_architecure](./Image_source/architecture_white_bg.png)
-
-<br>
-
 - Open source system monitoring & alerting toolkit (Build at SoundCloud)
 - CNCF project in 2016 after k8s
 - Collect & Store time series data (metric)
+
+<br>
 
 ### Features
 
@@ -36,3 +34,13 @@
 - Targets r discovered via service discovery or static conf
 
 <br>
+
+### Architecure
+
+![Prometheus_architecure](./Image_source/architecture_white_bg.png)
+
+- Prometheus server: TSDB 소유, 서버안에 데이터 저장
+- Prometheus targets
+- Service discovery
+- Pushgateway: pull 방식을 지원해주는 리소스 (**Fargate** 에 좋을 것으로 보임)
+- 
