@@ -18,6 +18,10 @@
 
 ## Prometheus
 
+![Prometheus_architecure](Image_source/architecture.png)
+
+<br>
+
 - Open source system monitoring & alerting toolkit (Build at SoundCloud)
 - CNCF project in 2016 after k8s
 - Collect & Store time series data (metric)
