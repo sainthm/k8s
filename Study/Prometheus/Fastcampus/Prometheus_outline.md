@@ -18,7 +18,7 @@
 
 ## Prometheus
 
-![Prometheus_architecure](./Image_source/architecture.png)
+![Prometheus_architecure](./Image_source/architecture_white_bg.png)
 
 <br>
 
