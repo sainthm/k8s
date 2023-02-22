@@ -43,4 +43,13 @@
 - Prometheus targets
 - Service discovery
 - Pushgateway: pull 방식을 지원해주는 리소스 (**Fargate** 에 좋을 것으로 보임)
-- 
+- Alertmanager: Alert 담당
+- Data visualization and export
+
+
+### Metric types:
+
+- Counter: Cumulative metirc (reset 0)
+- Gauge: Single numerical value (up & down)
+- Histogram: Samples observations (사전에 bucket 등을 지정, Server side에서 부하 발생)
+- Summary: Samples observations (quantile 지원, 분위수, Client side에서 부하 발생)
