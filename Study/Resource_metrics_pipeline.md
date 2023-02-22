@@ -1,4 +1,4 @@
-# Resource metric pipeline
+# Resource metrics pipeline
 
 - k8s 환경에서 Metrics API 는 AutoScaling 및 비슷한 사용 사례를 지원하기 위한 기본적인 메트릭 집합을 제공
 - 해당 API는 노드와 파드의 리소스 사용량 정보를 제공 (CPU, Mem 지표 포함)
