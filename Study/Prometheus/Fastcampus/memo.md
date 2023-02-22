@@ -8,9 +8,9 @@
     - Require (agent | logic) per application
   - pull 방식
     - Monitoring 시스템 자체가 주체가됨
-    - 타겟을 명시
+    - 타겟을 명시 (서비스 디스커버리 필요)
     - 모니터링 시스템 내에서 설정
     - Require service discovery
-    - Easy to update setting
+    - **Easy to update setting**
 
 
