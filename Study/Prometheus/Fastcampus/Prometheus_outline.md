@@ -46,6 +46,7 @@
 - Alertmanager: Alert 담당
 - Data visualization and export
 
+<br>
 
 ### Metric types:
 
@@ -53,3 +54,6 @@
 - Gauge: Single numerical value (up & down)
 - Histogram: Samples observations (사전에 bucket 등을 지정, Server side에서 부하 발생)
 - Summary: Samples observations (quantile 지원, 분위수, Client side에서 부하 발생)
+
+
+<br>
