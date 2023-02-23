@@ -31,6 +31,10 @@
 ## Point!
 
 - 노드 익스포터는 모니터링 대상 시스템에 설치 (?, 검증중)
+
+
+[Node_Exporter](./Image_Source/Node_Exporter.png)
+
 - 사용 포트:
   - 9090: 프로메테우스 자체 서비스 포트(메트릭 데이터 전달, 노출 및 모니터링, ex: $curl localhost:9090/metrics | grep http)
   - 9100: Node Exporter 사용 포트(모니터링 대상 시스템에 설치, 시스템의 다양한 정보를 전달해주는 agent 역할을 수행)
