@@ -14,3 +14,13 @@
     - PushGateway
   - TSDB
   - HTTP server
+
+
+<br>
+
+## 쿠버네티스 오퍼레이터
+- 헬름을 통해 관리하는 포인트 세 가지!!
+  - Retrieval
+  - pull metrics
+  - Prometheus targets (Jobs/exporters)
+
