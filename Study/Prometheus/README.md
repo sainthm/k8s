@@ -9,7 +9,8 @@
 ## 프로메테우스 컴포넌트
 
 - Prometheus server
-  - Retrieval: pull 메트릭을 통해, 
+  - Retrieval: pull 메트릭을 통해, 메트릭을 가져옴
     - **Prometheus targets**
+    - PushGateway
   - TSDB
   - HTTP server
