@@ -24,3 +24,10 @@
   - pull metrics
   - Prometheus targets (Jobs/exporters)
 
+<br>
+
+## 프로메테우스 헬름 차트 구성
+
+- 아래의 컴포넌트들이 pod에 배포
+  - sts: Prometheus server, Alertmanager
+  - deploy: Grafana, operator, kube-metrics
