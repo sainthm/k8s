@@ -31,3 +31,8 @@
 - 아래의 컴포넌트들이 pod에 배포
   - sts: Prometheus server, Alertmanager
   - deploy: Grafana, operator, kube-metrics
+  - crd: servicemonitor (operator 가 직접적으로 사용)
+  - cm
+  - secret
+  - svc
+  - ing
