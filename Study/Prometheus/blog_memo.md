@@ -39,6 +39,10 @@ helm show values prometheus-community/kube-prometheus-stack > /tmp/override_valu
 
 - pv, ingress 설정
 
+<br>
+
+### sample yaml
+
 ```yaml
 prometheus:
   prometheusSpec:
@@ -120,4 +124,23 @@ grafana:
       #domain: choilab.com
       #root_url: http://choilab/test/
       #serve_from_sub_path: true
+```
+
+
+## ingress 설정
+
+<br>
+
+### sample yaml
+
+```yaml
+prometheus:
+  proemtheusSpec:
+    routePrefix: /prom
+  ingress:
+    enabled: true
+    hosts:
+      - sample.com
+    paths:
+      - /prom
 ```
