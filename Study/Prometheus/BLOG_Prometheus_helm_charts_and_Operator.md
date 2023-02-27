@@ -207,8 +207,26 @@ kubectl get pod -n prometheus
 
 <br>
 
+- 쿠버네티스 리소스 익스포터를 쉽게 구현
+  - Discovery of services, using the **PodMonitor** or **ServiceMonitor** (watch의 대상)
+
+
+
+<br>
+
 ### 설정 정보:
 
 - [kube-prometheus-stack 공식링크](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
 - Developing Prometheus Rules and Grafana Dashboards 참조
   - prometheus.io/scrape
+
+
+<br>
+
+### 용어 정리:
+
+- 서비스
+
+
+
+<br>
