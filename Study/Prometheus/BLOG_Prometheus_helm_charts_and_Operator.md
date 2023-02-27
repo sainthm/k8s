@@ -247,6 +247,8 @@ kubectl get pod -n prometheus
   - [prometheus-operator github](https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/user-guides/getting-started.md#include-servicemonitors)
 - RBAC의 경우, 위 링크에서 내용 참조
 - 가이드에서는 노드포트 를 사용하여 validation 진행 (nodePort: 30900)
+- ServiceMonitor 가 ip:8080/metrics 에 대해, Targets 의 Endpoint 생성
+
 
 <br>
 
