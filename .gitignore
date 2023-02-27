@@ -14,7 +14,7 @@
 
 *.pdf
 
-*.png
+#*.png
 
 *.csv
 
