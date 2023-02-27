@@ -202,6 +202,8 @@ kubectl get pod -n prometheus
 ### 역할
 
 - 오퍼레이터가 변화를 감지하고 프로메테우스 서버에 반영
+  - Operator 가 ServiceMonitor와 Promethues 영역을 감지(watch)
+  - 감지된 사항을 Prometheus Server 에게 전달 및 적용 (deploy & manage)
 
 <br>
 
