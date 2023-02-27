@@ -244,8 +244,9 @@ kubectl get pod -n prometheus
 ### Sample yaml file
 
 - yaml 파일 정보는 아래의 링크에서 확인 가능
-- [prometheus-operator github](https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/user-guides/getting-started.md#include-servicemonitors)
-
+  - [prometheus-operator github](https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/user-guides/getting-started.md#include-servicemonitors)
+- RBAC의 경우, 위 링크에서 내용 참조
+- 가이드에서는 노드포트 를 사용하여 validation 진행 (nodePort: 30900)
 
 <br>
 
