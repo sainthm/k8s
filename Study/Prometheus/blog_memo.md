@@ -209,3 +209,4 @@ kubectl get pod -n prometheus
 
 - [kube-prometheus-stack 공식링크](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
 - Developing Prometheus Rules and Grafana Dashboards 참조
+  - prometheus.io/scrape
