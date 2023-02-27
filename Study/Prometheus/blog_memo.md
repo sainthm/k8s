@@ -144,3 +144,19 @@ prometheus:
     paths:
       - /prom
 ```
+
+<br>
+
+## 헬름 설치
+
+```bash
+# ns 가 없다면 생성 진행
+kubectl create ns prometheus
+```
+
+<br>
+
+```bash
+# pv 생성 진행
+kubectl apply -f pv.yaml
+```
