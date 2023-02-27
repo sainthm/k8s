@@ -73,4 +73,51 @@ spec:
   volumeMode: Filesystem
 ```
 
+<br>
 
+### ingress_override_values.yaml
+
+```yaml
+prometheus:
+  # change here
+  prometheusSpec:
+    routePrefix: /prom
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 5Gi
+          selector:
+            matchLabels:
+              app: prometheus-test
+  ### ingress 쪽은 수정 필요!!
+  #ingress:
+    #enabled: true
+    # change here
+    #hosts:
+      #- choilab.com
+    # change here
+    #paths:
+      #- /prom
+      
+grafana:
+  adminPassword: password1234
+  ingress:
+    enabled: true
+    annotations:
+      nginx.ingress.kubernetes.io/rewrite-target: /$2
+    # change here
+    path: /test(/|$)(.*)
+    ### hosts 설정 수정 필요
+    #hosts:
+      #- choilab.com
+  ### grafana.ini 설정 수정 필요 
+  #grafana.ini:
+    #server:
+      # change here
+      #domain: choilab.com
+      #root_url: http://choilab/test/
+      #serve_from_sub_path: true
+```
