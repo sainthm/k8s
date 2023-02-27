@@ -195,6 +195,13 @@ kubectl get pod -n prometheus
 
 <br>
 
+## Operator Architecture
+
+![Architecture](../../Image_Source/operator_architecture.png)
+
+
+<br>
+
 ## 프로메테우스 오퍼레이터
 
 <br>
