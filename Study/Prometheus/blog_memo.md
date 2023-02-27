@@ -195,6 +195,17 @@ kubectl get pod -n prometheus
 
 <br>
 
-
+## 프로메테우스 오퍼레이터
 
 <br>
+
+### 역할
+
+- 오퍼레이터가 변화를 감지하고 프로메테우스 서버에 반영
+
+<br>
+
+### 설정 정보:
+
+- [kube-prometheus-stack 공식링크](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
+- Developing Prometheus Rules and Grafana Dashboards 참조
