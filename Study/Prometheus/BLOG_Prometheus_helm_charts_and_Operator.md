@@ -257,6 +257,7 @@ spec:
     matchLabels:
       app: example-app
   template:
+    # metadata 항목을 통해, target pod 정의
     metadata:
       labels:
         app: example-app
@@ -280,6 +281,7 @@ metadata:
   labels:
     app: example-app
 spec:
+  # selector 항목을 통해, target pod 정의
   selector:
     app: example-app
   ports:
@@ -295,14 +297,36 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: example-app
+  # labels 항목을 통해, Prometheus.yaml 에서 정의한 matchLabels 항목의 label 명과 매치
   labels:
     team: frontend
 spec:
+  # selector의 matchLabels 항목을 통해, target pod 정의
   selector:
     matchLabels:
       app: example-app
   endpoints:
   - port: web
+```
+
+<br>
+
+```yaml
+# Prometheus.yaml
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus
+spec:
+  serviceAccountName: prometheus
+  # serviceMonitorSelector의 matchLabels 항목을 통해, ServiceMonitor labels 정의
+  serviceMonitorSelector:
+    matchLabels:
+      team: frontend
+  resources:
+    requests:
+      memory: 400Mi
+  enableAdminAPI: false
 ```
 
 
