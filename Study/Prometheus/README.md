@@ -57,3 +57,6 @@ helm repo update
 helm install -n [namespace] [RELEASE_NAME] prometheus-community/kube-prometheus-stack
 ```
 
+<br>
+
+<br>
