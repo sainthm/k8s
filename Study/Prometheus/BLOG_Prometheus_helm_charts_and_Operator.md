@@ -232,8 +232,78 @@ kubectl get pod -n prometheus
 
 ### 용어 정리:
 
-- 서비스
+- 상단의 Operator Architecture 참조
+  
+<br>
 
+- 서비스: **메트릭을 수집할 대상**
+  - target (파드, label로 구분, **라벨 필수**)
+- 
+
+
+### Sample yaml file
+
+<br>
+
+```yaml
+# Deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: example-app
+  template:
+    metadata:
+      labels:
+        app: example-app
+    spec:
+      containers:
+      - name: example-app
+        image: fabxc/instrumented_app
+        ports:
+        - name: web
+          containerPort: 8080
+```
+
+<br>
+
+```yaml
+# Service.yaml
+kind: Service
+apiVersion: v1
+metadata:
+  name: example-app
+  labels:
+    app: example-app
+spec:
+  selector:
+    app: example-app
+  ports:
+  - name: web
+    port: 8080
+```
+
+<br>
+
+```yaml
+# ServiceMonitor.yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: example-app
+  labels:
+    team: frontend
+spec:
+  selector:
+    matchLabels:
+      app: example-app
+  endpoints:
+  - port: web
+```
 
 
 <br>
