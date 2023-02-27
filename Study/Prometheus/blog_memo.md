@@ -158,5 +158,22 @@ kubectl create ns prometheus
 
 ```bash
 # pv 생성 진행
+# stack 자체에서 pv가 정의되어 있으므로 먼저 생성
 kubectl apply -f pv.yaml
 ```
+
+<br>
+
+
+```bash
+# recap for helm install
+helm install -n [namespace] -f specific_file [RELEASE_NAME] prometheus-community/kube-prometheus-stack
+```
+
+<br>
+
+```bash
+# 헬름 설치 진행
+helm install -n prometheus -f ingress_override_values.yaml preometheus-stack prometheus-community/kube-prometheus-stack
+```
+
