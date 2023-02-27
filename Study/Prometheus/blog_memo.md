@@ -12,6 +12,15 @@ helm repo update
 
 <br>
 
+## 헬름 차트 확인
+
+```bash
+helm show values prometheus-community/kube-prometheus-stack
+```
+
+
+<br>
+
 ## 헬름차트 설치
 
 ```bash
