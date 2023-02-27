@@ -35,3 +35,42 @@ helm install -n [namespace] [RELEASE_NAME] prometheus-community/kube-prometheus-
 helm show values prometheus-community/kube-prometheus-stack > /tmp/override_values.yaml
 ```
 
+## 헬름 설정
+
+- pv, ingress 설정
+
+```yaml
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 5Gi
+            selector:
+              matchLabels:
+                app: ds-prometheus
+```
+
+### pv.yaml (Example)
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prometheus-pv
+  labels:
+    app: prometheus-test
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/prometheus"
+  volumeMode: Filesystem
+```
+
+
