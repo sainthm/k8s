@@ -2,6 +2,10 @@
 
 <br>
 
+# 프로메테우스 with 헬름
+
+<br>
+
 ## 헬름 차트 추가
 
 ```bash
@@ -177,3 +181,20 @@ helm install -n [namespace] -f specific_file [RELEASE_NAME] prometheus-community
 helm install -n prometheus -f ingress_override_values.yaml preometheus-stack prometheus-community/kube-prometheus-stack
 ```
 
+<br>
+
+## 헬름 설치 확인
+
+```bash
+kubectl get pod -n prometheus
+```
+
+<br>
+
+# Operator
+
+<br>
+
+
+
+<br>
