@@ -31,6 +31,7 @@
 
 ### 프로메테우스-스택
 
-
-
+- [프로메테우스-스택 핼름 차트 링크](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
+- 프로메테우스와 관련하여 모니터링에 필요한 여러 요소를 함께 제공 (단일 차트 제공)
+- 해당 차트를 활용하면 모니터링 메트릭 추가, 커스텀 대시보드 구성 등의 작업을 하지 않고도 **실제 기업 운영에 바로 적용 가능한 수준** 의 모니터링 시스템 구축 가능
 
