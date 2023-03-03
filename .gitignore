@@ -19,3 +19,5 @@
 *.csv
 
 __pycache__
+
+*.tgz
