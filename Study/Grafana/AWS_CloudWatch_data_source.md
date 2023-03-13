@@ -9,14 +9,20 @@
 
 <br>
 
-#### ㄸxamples of IAM Policy:
+### Examples of IAM Policy:
 
-- 
+- Metrics only
+- Logs only
+- Metrics and Logs
 
 <br>
 
 
+#### Metrics only
+
 <br>
+
+
 
 ```json
 {
