@@ -4,6 +4,14 @@
 
 <br>
 
+
+### 선요약:
+
+- **Grafana 는 GetMetricData API 를 통해, custom namespaces 를 갖고 오지 못한다고함**
+
+
+<br>
+
 ## AWS CloudWatch data source
 
 
