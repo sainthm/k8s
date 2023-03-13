@@ -56,3 +56,13 @@
   ]
 }
 ```
+
+
+<br>
+
+
+## Namespaces of Custom Metrics
+
+- Grafana is not able to load custom namespaces through the GetMetricData API. 
+- If you still want your custom metrics to show up in the fields in the query editor, you can specify the names of the namespaces containing the custom metrics in the Namespaces of Custom Metrics field. 
+- The field accepts a multiple namespaces, separated by a comma.
