@@ -69,8 +69,28 @@
 <br>
 
 
-## Namespaces of Custom Metrics
+### Namespaces of Custom Metrics
 
 - Grafana is not able to load custom namespaces through the GetMetricData API. 
 - If you still want your custom metrics to show up in the fields in the query editor, you can specify the names of the namespaces containing the custom metrics in the Namespaces of Custom Metrics field. 
 - The field accepts a multiple namespaces, separated by a comma.
+
+<br>
+
+
+## CloudWatch query editor
+
+- The CloudWatch data source can query data from both CloudWatch metrics and CloudWatch Logs APIs, each with its own specialized query editor. 
+- You select which API you want to query with using the query mode switch on top of the editor.
+
+
+
+
+
+
+
+
+
+
+
+<br>
