@@ -23,3 +23,5 @@ __pycache__
 *.tgz
 
 *kube-prometheus-stack*
+
+Study/kubepractice/*
