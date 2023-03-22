@@ -17,5 +17,7 @@
 
 ### kubectl config view
 
-- API ㅅ서버 통신에 필요한 인증 정보 확인!
+- API 서버 통신에 필요한 인증 정보 확인!
 - ${HOME}/.kube/config 파일에 대한 정보 확인 명령어
+
+<br>
